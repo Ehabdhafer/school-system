@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #adc4ce;
+}
+header {
+  background-color: #96b6c5;
+}
+.container {
+  margin: 0 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img1 {
+  width: 12rem;
+  height: 9rem;
+}
+ul {
+  width: 50rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+li {
+  list-style: none;
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#form1 {
+  width: 50rem;
+  height: 20rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2rem 10rem;
+}
+table {
+  width: 100rem;
+  margin: 0 10rem;
+  font-size: 2rem;
+}
+.div1 {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  width: 35rem;
+}
+tr {
+  display: flex;
+  justify-content: space-between;
+}
+th,
+td {
+  width: 25rem;
+  border: 0.2rem solid #96b6c5;
+  text-align: center;
+}
+#major {
+  font-size: 1.7rem;
+  width: 35rem;
+  text-align: center;
+}
+.button {
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin: 0 15rem;
+  background-color: #eee0c9;
+  border: 0.2rem solid #96b6c5;
+}
+footer {
+  margin: 28rem 0 0;
+  background-color: #96b6c5;
+  height: 7rem;
+  line-height: 7rem;
+}
+.copyright {
+  font-size: 1.3rem;
+}
+#div2 {
+  margin: 5rem 10rem;
+  width: 125rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.student-card {
+  margin: 3rem 0 0;
+  width: 30rem;
+  background-color: #eee0c9;
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+.img2 {
+  margin: 1rem 4.5rem;
+  width: 17rem;
+  height: 12rem;
+}
+@media screen and (max-width: 1350px) {
+  header,
+  footer {
+    width: 140rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .student-card {
+    width: 40rem;
+    margin: 4.5rem 0 0;
+    font-size: 2.2rem;
+    padding: 1.5rem 3rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .student-card {
+    width: 60rem;
+    margin: 6rem 0 0;
+    font-size: 3.4rem;
+    padding: 2rem 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .student-card {
+    width: 100rem;
+    margin: 10rem 0 0;
+    font-size: 6rem;
+    padding: 6rem 8rem;
+  }
+}
