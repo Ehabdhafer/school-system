@@ -86,3 +86,23 @@ document.getElementById("form1").addEventListener("submit", function (event) {
   console.log(students);
   localStorage.setItem("students", JSON.stringify(students));
 });
+
+window.addEventListener("load", function () {
+  const localStorageContent = localStorage.getItem("students");
+  students = localStorageContent ? JSON.parse(localStorageContent) : [];
+
+  for (const student of students) {
+    const named = student.array[0];
+    const birthDated = student.array[1];
+    const genderd = student.array[2];
+    const phone2d = student.array[3];
+    const majord = student.array[4];
+
+    document.getElementById(
+      "div2"
+    ).innerHTML += `<div class="student-card"><img class="img2" src="img/male.jpg"><span>Name : ${named}
+    </span><span>Birth Date : ${birthDated}</span><span>Gender : ${genderd} </span><span>Phone number : ${phone2d}
+    </span><span>Major: ${majord}</span></div>`;
+  }
+});
+// localStorage.clear();
