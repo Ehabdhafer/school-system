@@ -31,6 +31,7 @@ document.getElementById("form1").addEventListener("submit", function (e) {
 
 // --------------------------------------------
 
+let students = [];
 document.getElementById("form1").addEventListener("submit", function (event) {
   event.preventDefault();
   let fullname = document.getElementById("name").value;
@@ -40,24 +41,18 @@ document.getElementById("form1").addEventListener("submit", function (event) {
   let major = document.getElementById("major").value;
 
   class Student {
-    static students = [];
-    constructor(...array) {
+    constructor(array) {
       this.array = array;
     }
 
-    render() {
-      this.imageurl;
-      this.fullname;
-      this.birthdate;
-      this.gender2;
-      this.major;
-      this.phone2;
-    }
-    save() {
-      Student.students.push(this.array);
-      console.log(Student.students);
-      localStorage.setItem("students", JSON.stringify(Student.students));
-    }
+    // render() {
+    //   this.imageurl;
+    //   this.fullname;
+    //   this.birthdate;
+    //   this.gender2;
+    //   this.major;
+    //   this.phone2;
+    // }
   }
 
   let stdiv = document.createElement("div");
@@ -87,5 +82,7 @@ document.getElementById("form1").addEventListener("submit", function (event) {
 
   let student1 = new Student([fullname, birthdate, gender2, phone2, major]);
   document.getElementById("div2").appendChild(stdiv);
-  student1.save();
+  students.push(student1);
+  console.log(students);
+  localStorage.setItem("students", JSON.stringify(students));
 });
